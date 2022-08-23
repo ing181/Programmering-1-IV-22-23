@@ -5,5 +5,5 @@ int main() {
     // Write C++ code here
     std::cout << "Hejsan hejsan";
 
-    return 0;
+return 0;
 }
