@@ -3,7 +3,7 @@
 
 int main() {
     // Write C++ code here
-    std::cout << "Hello world!";
+    std::cout << "Hejsan hejsan";
 
     return 0;
 }
