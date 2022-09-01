@@ -9,7 +9,7 @@ int main()
     // Om du inte vill att bytet ska synas i ditt program lägg till
     system("cls");
     cout << "Hej ÅÄÖ åäö" << endl;
-    // "system" betyder att ett Windowsprogram ska köras. Ex: Change Codepage "chsp"
+    // "system" betyder att ett Windowsprogram ska köras. Ex: Change Codepage "chcp"
     // eller "cls" Clear Screen
     return 0;
 }
