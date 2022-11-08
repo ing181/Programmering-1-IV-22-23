@@ -18,7 +18,7 @@ https://stackoverflow.com/questions/55479131/easiest-way-to-load-variables-from-
 */
 
    ifstream infile("fil.txt");
-   string line, ut;
+   string line, ut="";
    while (getline(infile, line)) {
             ut = ut + line +"\n";
    }
