@@ -1,15 +1,17 @@
 #include <iostream>
 using namespace std;
-void rekursivFunktion(int x);
+void rekursivFunktion(unsigned long long int x);
 int main()
 {
-    int x=1;
+    long long x=1;
+    cout << sizeof(int) << endl;
+    cout << sizeof(unsigned long long int) << endl;
     rekursivFunktion(x);
 
 
     return 0;
 }
-void rekursivFunktion(int x)
+void rekursivFunktion(unsigned long long int x)
 {
 
       cout << x << endl;
