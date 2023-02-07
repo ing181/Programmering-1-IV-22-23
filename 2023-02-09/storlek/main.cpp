@@ -22,7 +22,6 @@ int main()
 
     cout << "We increase \"heltal\" by one (heltal++)" << endl;
     heltal++;
-    cout << endl;
     cout << "heltal (decimal) = " << heltal << endl;
     bitset<32>b3(heltal);
     cout << "heltal (binary) = " << b3 << " Nuber of ones = " << numberOfOnes(b3) << endl;
