@@ -7,7 +7,7 @@ int main()
     cout << sizeof(int) << " byte = " << sizeof(int)*8 << " bitar (" << sizeof(int)*8 << " ones or zeros)" << endl;
     cout << endl;
 
-    int heltal = 0b1111111111111111111111111111111;
+    unsigned int heltal = 0b1111111111111111111111111111111;
     bitset<32>b1(heltal);
     cout << "heltal (decimal) = " << heltal << endl;
     cout << "heltal (binary) = " << b1 << " Nuber of ones = " << numberOfOnes(b1) <<  endl;
@@ -25,6 +25,13 @@ int main()
     cout << "heltal (decimal) = " << heltal << endl;
     bitset<32>b3(heltal);
     cout << "heltal (binary) = " << b3 << " Nuber of ones = " << numberOfOnes(b3) << endl;
+    cout << endl;
+
+    cout << "We increase \"heltal\" by one (heltal++)" << endl;
+    heltal++;
+    cout << "heltal (decimal) = " << heltal << endl;
+    bitset<32>b4(heltal);
+    cout << "heltal (binary) = " << b4 << " Nuber of ones = " << numberOfOnes(b4) << endl;
 
     return 0;
 }
