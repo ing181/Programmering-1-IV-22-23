@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-struct High_jumper
+class High_jumper
 {
     string namn;
     float height;
@@ -18,6 +18,9 @@ int main()
     // const int participants = 3;
     // High_jumper hj[participants];
     High_jumper *hj = new High_jumper[participants];
+
+    High_jumper *hj2 = new High_jumper;
+
     for (int i=0; i<participants; i++)
     {
         cout << "Participant, name: " << (i+1) <<": ";
@@ -39,6 +42,12 @@ int main()
      }
      cout << endl;
      cout << hj[index].namn << " jumped the highest, " << hj[index].height << " cm." << endl;
+
+     hj2->height=3.4;
+     hj2->namn="Pia";
+
+     cout << hj2->namn << " " << hj2->height  << endl;
+
 
     return 0;
 }

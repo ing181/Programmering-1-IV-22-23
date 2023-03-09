@@ -12,8 +12,8 @@ int main()
     // Här skapas plats i minnet
     // int aintArray[antal];
 
-    int *intArray = new int[antal];
-    // int intArray[antal];
+    //int *intArray = new int[antal];
+    int intArray[antal];
     for (int i=0; i<antal; i++)
     {
         intArray[i] = i;
@@ -24,7 +24,7 @@ int main()
         cout << intArray[i] << endl;
     }
 
-    delete[] intArray;
+   // delete[] intArray;
 
 
 
