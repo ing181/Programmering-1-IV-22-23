@@ -28,7 +28,6 @@ int main()
     while (is.good())
     {
         getline(is,line);
-        cout << "TETT" << line << endl;
     }
     is.close();
     }
