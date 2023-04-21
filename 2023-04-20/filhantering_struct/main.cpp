@@ -13,7 +13,7 @@ int main()
     Glosa glosa[100];
     int i=0;
     bool fortsatt=true;
-    while (fortsatt) {
+    while (fortsatt) {  // "0" är false
     cout << "Mata in glosa (" << i << ")>: ";
     cin >> glosa[i].word;
     cout << "Mata in oversattningen (" << i << ")>: ";
@@ -25,11 +25,14 @@ int main()
     }
 
     ofstream os;
+
     os.open("fil.txt",ios_base::app); // app, apppend
     // lägger till en ny rad. Annars skrivs det gamla över
     if (os.is_open()) {  // Kollar att det funkar
         for (int j=0; j<i; j++) {
-    os << glosa[j].word << "," << glosa[j].translation   << "\n"; // Lägger till radbrytning
+    // string konkatenering (Konkatenera, sätta ihop en string av andra "stringar" eller textsträngar)
+    string in=glosa[j].word + "," + glosa[j].translation   + "\n"; // Lägger till radbrytning
+    os << in;
         }
     os.close();
     }
@@ -41,9 +44,9 @@ int main()
     string str = "hej,hallo";
     int index=str.find(",");
     //cout << index; // 3
-    string g = str.substr(0,3);
+    string g = str.substr(0,index); // Från 0 och 3 bokstäver
     cout << g << endl;
-    string t = str.substr(4);
+    string t = str.substr(4); // Från bokstav 4 till slutet
     cout << t << endl;
 
     return 0;
