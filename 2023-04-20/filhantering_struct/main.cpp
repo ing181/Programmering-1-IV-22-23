@@ -47,6 +47,7 @@ int main()
     string g = str.substr(0,index); // Från 0 och 3 bokstäver
     cout << g << endl;
     string t = str.substr(4); // Från bokstav 4 till slutet
+
     cout << t << endl;
 
     return 0;
